@@ -1,0 +1,151 @@
+#main_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border: 1px solid black;
+    place-items: center;
+    align-items: center;
+    padding: 2%;
+    margin: auto;
+    gap: 3%;
+    height: 1200px;
+    background-color: aliceblue;
+    overflow: hidden;
+    
+}
+
+.card_container{
+    border: 10px solid rgb(71, 123, 133);
+    text-align: center;
+    width: 80%;
+    height: 520px;
+    margin: auto;
+    /* padding: 4%; */
+    border-radius: 15%;
+    overflow: hidden;
+    background-color: white;
+    
+   
+}
+.card_container:hover{
+    scale: 1.1;
+    transition: all 1s ease-in-out;
+    border: 1px solid rgb(60, 136, 172)
+}
+
+.card_container img{
+      width: 94%;
+      height: 300px;
+      border-radius: 12%;
+      border: 10px solid rgb(60, 136, 172) ;
+      margin: auto;
+    
+
+}
+.card_container img:hover{
+    scale: 1.2;
+    transition: all 1s ease-in-out;
+}
+p{
+    margin: 5%;
+}
+h1:hover{
+  color:rgb(60, 136, 172);
+}
+
+p:hover{
+    color:rgb(60, 172, 139);
+  }
+
+button{
+    border-radius: 5px ;
+    background-color: red;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+button:hover{
+    background-color: rgb(60, 136, 172);
+    color: white;
+}
+@media screen and (min-width:200px)and (max-width:460px) {
+    #main_container{
+        /* display: grid;
+        grid-template-columns: repeat(1,1fr); */
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        align-items: center;
+        padding: 0%;
+        margin: auto;
+        gap: 0px;
+
+        height: 4500px;
+        background-color: aliceblue;
+        overflow: hidden;
+        
+    }
+
+
+    .card_container{
+        border: 12px solid rgb(71, 123, 133);
+        text-align: center;
+        width: 80%;
+        height: 500px;
+        margin: auto;
+        border-radius: 10%;
+        overflow: hidden;
+        background-color: white;
+        
+       
+    }
+
+
+    .card_container img{
+        width: 94%;
+        height: 300px;
+        border-radius: 8%;
+        border: 12px solid  rgb(71, 123, 133) ;
+        margin: auto;
+
+
+}
+
+}
+    @media screen and (min-width:461px)and (max-width:850px) {
+        #main_container{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                border: 1px solid black;
+                align-items: center;
+                padding: 2%;
+                margin: auto;
+                gap: 3%;
+                height: 2500px;
+                background-color: aliceblue;
+                
+            }
+            
+            .card_container{
+                border: 12px solid rgb(71, 123, 133);
+                text-align: center;
+                width: 80%;
+                height: 500px;
+                margin: auto;
+                border-radius: 10%;
+                overflow: hidden;
+                background-color: white;
+                
+               
+            }
+
+            
+    .card_container img{
+        width: 94%;
+        height: 300px;
+        border-radius: 8%;
+        border: 12px solid  rgb(71, 123, 133) ;
+        margin: auto;
+
+    
+}
+    }
